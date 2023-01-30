@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  /*
+  background: #654ea300; 
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); 
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); 
+  */
+  background-image: url("./asset/luca-bravo-9l_326FISzk-unsplash.jpg");
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.navsection {
+  width: 100%;
+  height: 10vh;
+  background-color: #00000054;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+}
+nav a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-bottom: 2px solid #dee6e5;
+    transition: all 0.3s linear;
+  }
+  nav a:hover::before {
+    width: 100%;
+  }
+
+main {
+  width: 100%;
+  margin-top: 30vh;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+main h5 {
+  font-size: 18px;
+  font-family: "open Sans" sans-serif;
+}
+main h1 {
+  font-size: 40px;
+  font-family: "Montserrat" sans-serif;
+  margin: 15px 0px;
+}
+main h3 {
+  font-size: 20px;
+  font-family: "open Sans" sans-serif;
+}
+.btn1 {
+  width: 140px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn2 {
+  width: 140px;
+  height: 50px;
+  outline: none;
+  border: 2px solid #fff;
+  background-color: hsla(0, 0%, 100%, 0.267);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #fff;
+}
+.btn1:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn2:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
